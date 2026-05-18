@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"python -m venv venv\")",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\pip install fastapi uvicorn sqlalchemy psycopg2-binary alembic python-dotenv\")",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\python -c ''import fastapi, uvicorn, sqlalchemy; print\\(\"\"OK\"\"\\)''\")",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\python -c \"\"import fastapi, uvicorn, sqlalchemy; print\\(''OK''\\)\"\"\")",
+      "Bash(git commit:*)",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\alembic init alembic\")",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\python -c \"\"from main import app; print\\(''OK''\\)\"\"\")",
+      "Bash(export PATH=\"/c/Program Files/nodejs:/c/Users/guest1234/AppData/Roaming/nvm:$PATH\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(powershell.exe -Command \"Get-Service -Name postgresql* | Select-Object Name, Status\")",
+      "Bash(powershell.exe -Command \"where.exe psql\")",
+      "Read(//c/Users/guest1234/AppData/Local/Programs//**)",
+      "Bash(powershell.exe -Command \"winget install PostgreSQL.PostgreSQL --accept-package-agreements --accept-source-agreements\")",
+      "Bash(powershell.exe -Command \"winget search postgresql\")",
+      "Bash(powershell.exe -Command \"winget install PostgreSQL.PostgreSQL.17 --accept-package-agreements --accept-source-agreements --silent\")",
+      "Bash(powershell.exe -Command \"winget install PostgreSQL.PostgreSQL.17 --accept-package-agreements --accept-source-agreements\")",
+      "Bash(export PGPATH=\"/c/Program Files/PostgreSQL/17/bin\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\pg_ctl.exe'' status -D ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\data''\")",
+      "Bash(powershell.exe -Command \"Get-Service | Where-Object { $_.Name -like ''*postgres*'' }\")",
+      "Bash(powershell.exe -Command \"Start-Service -Name postgresql-x64-17\")",
+      "Bash(powershell.exe -Command \"Get-Service | Where-Object { $_.Name -like ''*pg*'' -or $_.DisplayName -like ''*postgres*'' } | Select-Object Name, DisplayName, Status\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\pg_ctl.exe'' start -D ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\data'' -l ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\data\\\\pg.log''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\createdb.exe'' -U postgres sumup\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe'' -U postgres -c ''\\\\l''\")",
+      "Bash(powershell.exe -Command \"echo ''\\\\l'' | & ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe'' -U postgres\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(powershell.exe -Command \":*)",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\pg_ctl.exe'' reload -D ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\data''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\PostgreSQL\\\\17\\\\bin\\\\psql.exe'' -U postgres -c \"\"ALTER USER postgres PASSWORD ''postgres''; SELECT datname FROM pg_database;\"\"\")",
+      "Bash(powershell.exe -Command \"venv\\\\Scripts\\\\alembic revision --autogenerate -m ''init''\")",
+      "Bash(powershell.exe -Command ' *)",
+      "Bash(powershell.exe -Command \"venv\\\\\\\\Scripts\\\\\\\\uvicorn main:app --reload\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

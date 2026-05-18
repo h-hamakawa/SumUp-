@@ -12,7 +12,7 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "SumUp",
-  description: "Notion-like note-taking app",
+  description: "Notionライクなノートアプリ",
 };
 
 export default function RootLayout({
